@@ -1,0 +1,8 @@
+#!/bin/bash
+# Script to generate assembly code from a C file using gcc
+# Usage: ./100-intel
+
+CFILE="main.c"
+ASMFILE="${CFILE%.c}.s"
+
+gcc -S -masm=intel "$CFILE" -o "$ASMFILE"
