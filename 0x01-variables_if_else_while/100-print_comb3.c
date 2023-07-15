@@ -18,14 +18,13 @@ int main(void)
             putchar(' ');
             putchar(j / 10 + '0');
             putchar(j % 10 + '0');
-            if (i == 98 && j == 99)
-                putchar('\n');
-            else
+            if (!(i == 98 && j == 99))
             {
                 putchar(',');
                 putchar(' ');
             }
         }
     }
+    putchar('\n');
     return (0);
 }
